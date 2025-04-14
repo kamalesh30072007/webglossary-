@@ -1,0 +1,109 @@
+/* Base styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e6f9fa; /* soft cyan background */
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+/* Main app container */
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #007c91; /* cyan-blue */
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  border-bottom: 2px solid #ffaa33; /* orange */
+  padding-bottom: 10px;
+}
+
+/* Tabs section */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.tab-button {
+  padding: 10px 18px;
+  background-color: #e0f7f9;
+  border: 2px solid #00bcd4;
+  color: #007c91;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+  background-color: #00bcd4;
+  color: #fff;
+}
+
+.tab-button.active {
+  background-color: #ffaa33; /* bright orange */
+  border-color: #ffaa33;
+  color: #fff;
+}
+
+/* Search box */
+.search-box {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: 2px solid #00bcd4;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-box:focus {
+  border-color: #ffaa33;
+}
+
+/* Grid of cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+/* Glossary card style */
+.card {
+  background-color: #fefefe;
+  border: 2px solid #00bcd4;
+  border-left: 6px solid #ffaa33;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0, 188, 212, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  color: #007c91;
+}
+
+.card p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.5;
+}
